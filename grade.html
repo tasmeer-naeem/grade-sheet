@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="grade.css" rel="stylesheet">
+    <script>
+       function display(){
+          var score=document.getElementById("score").value;
+          switch(true) 
+          {
+            case score >= 87 && score <= 100:
+                    alert("You Got Grade A+");
+                    break;
+            case score >= 80 && score <= 86:
+                    alert("You Got Grade A");
+                    break;
+            case score >= 72 && score <= 79:
+                    alert("You Got Grade B+");
+                     break;
+            case score >= 66 && score <= 71:
+                    alert("You Got Grade B");
+                     break;  
+            case score >= 60 && score <= 65:
+                     alert("You Got Grade C+");
+                     break;
+            case score >= 50 && score <= 59:
+                    alert("You Got Grade C");
+                      break; 
+            case score < 49 :
+                    alert("You Got Grade F");
+                      break;           
+            default:
+                    alert('You Got Grade F');
+                    break;
+          }
+     }
+    </script>
+
+</head>
+<body>
+    <div  id="dv1">
+        <div id="dv2">
+    <table   cellspacing="40"  >
+        <tr>
+            <td>ENTER NAME</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>ENTER MARKS</td>
+            <td><input type="text" id="score"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" id="btn" value="SUBMIT" onclick="display()"></td>
+        </tr>
+    </table><br><br><br><br>
+</div>
+</div>
+</body>
+</html>
